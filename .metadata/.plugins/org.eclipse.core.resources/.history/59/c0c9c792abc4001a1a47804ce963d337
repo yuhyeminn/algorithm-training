@@ -1,0 +1,19 @@
+package algorithm.sort;
+
+/**
+ * 선택정렬(Selection Sort)
+ * 시간복잡도 O(N^2)
+ * 
+ * 
+ * 
+ */
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public void sort() {
+		
+	}
+}

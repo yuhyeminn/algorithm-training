@@ -1,0 +1,18 @@
+package algorithm.sort;
+
+import java.util.Arrays;
+
+public class InsertionSort {
+	public static void main(String[] args) {
+		InsertionSort s = new InsertionSort();
+		
+		int[] arr = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
+		System.out.println("result : " + Arrays.toString(s.sort(arr)));
+	}
+	
+	public int[] sort(int arr[]) {
+		
+		
+		return arr;
+	}
+}

@@ -1,0 +1,30 @@
+package algorithm.sort;
+
+import java.util.Arrays;
+
+/**
+ * 퀵정렬(Quick Sort)
+ * - 특정한 값(pivot)을 기준으로 큰 숫자와 작은 숫자를 서로 교환한 뒤에 배열을 반으로 나누는 정렬 알고리즘
+ * - 분할 정복 알고리즘
+ * - 보통 첫번째 원소를 피봇 값으로 설정.
+ * - 평균시간복잡도 : O(NlogN)
+ * - 최악시간복잡도 : O(N^2)
+ */
+public class QuickSort {
+	static int[] arr = {3, 7, 8, 1, 5, 9, 6, 10, 2, 4};
+	public static void main(String[] args) {
+		QuickSort q = new QuickSort();
+		
+		q.sort(arr, arr[0], arr[9]);
+		System.out.println(Arrays.toString(arr));
+	}
+	
+	public void sort(int[] arr, int start, int end) {
+		if(start >= end) {
+			return;
+		}
+	}
+	
+	
+
+}

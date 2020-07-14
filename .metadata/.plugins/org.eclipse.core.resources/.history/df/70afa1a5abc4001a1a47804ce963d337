@@ -1,0 +1,26 @@
+package algorithm.sort;
+
+/**
+ * 선택정렬(Selection Sort)
+ * - 가장 작은 것을 선택해서 제일 앞으로 보내는 알고리즘
+ * - 시간복잡도 : O(N^2)
+ * 
+ * 
+ * 
+ */
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		SelectionSort s = new SelectionSort();
+		int[] array = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
+		
+		System.out.println("result : " + s.sort(array));
+	}
+	
+	public int[] sort(int[] array) {
+		
+		
+		
+		return array;
+	}
+}
