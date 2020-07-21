@@ -1,28 +1,36 @@
 package baekjoon;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+public static void main(String[] args) throws IOException{
 		
-		int index = 0;
-		int temp = 0;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int size = sc.nextInt();
-		int[] arr = new int[size];
+		int size = Integer.parseInt(br.readLine());
+		int arr[] = new int[10001];
 		
 		for(int i=0;i<size;i++) {
-			arr[i] = sc.nextInt();
+			int n = Integer.parseInt(br.readLine());
+			arr[n]++;
 		}
 		
-		Arrays.sort(arr);
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		for(int i=0;i<arr.length;i++) {
-			System.out.println(arr[i]);
+			if (arr[i] > 0) { 
+                for (int j = 0; j < arr[i]; j++) {
+                    bw.write(Integer.toString(i) + "\n");
+                }
+            }
 		}
+		
+		br.close();
+		bw.close();
 	}
-	
 }
