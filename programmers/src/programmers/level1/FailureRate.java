@@ -1,6 +1,8 @@
 package programmers.level1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -14,11 +16,12 @@ import java.util.List;
 public class FailureRate {
 
 	public static void main(String[] args) {
-		
+		int arr[] = {2,1,2,6,2,4,3,3};
+		System.out.println(Arrays.toString(FailureRate.solution(5, arr)));
 	}
 	
 	public static int[] solution(int n, int[] stages) {
-		int[] answer = {};
+		int[] answer = new int[n];
 		List<Stage> list = new ArrayList<>();
 		
 		for(int i=0;i<n;i++) {
@@ -27,11 +30,26 @@ public class FailureRate {
 		
 		for(int i=0;i<stages.length;i++) {
 			if(stages[i]<=n) {
-				list.get(stages[i]).userCnt++;
+				list.get(stages[i]-1).userCnt++;
 			}
 		}
 		
-		System.out.println(list.toString());
+		int totalPlayer = stages.length;
+		for(int i=0;i<list.size();i++) {
+			Stage s = list.get(i);
+			if(totalPlayer == 0 || s.userCnt == 0) s.failureRate = 0;
+			else {
+				s.failureRate = (double)s.userCnt/totalPlayer;
+				totalPlayer -= s.userCnt;
+			}
+		}
+		
+		Collections.sort(list);
+		
+		for(int i=0;i<list.size();i++) {
+			answer[i] = list.get(i).stageNumber;
+		}
+		
 		return answer;
 	}
 	
@@ -41,7 +59,7 @@ class Stage implements Comparable<Stage>{
 	int stageNumber;
 	//현재 도달한 유저 수
 	int userCnt;
-	int failureRate;
+	double failureRate;
 	
 	public Stage(int stageNumber) {
 		this.stageNumber = stageNumber;
