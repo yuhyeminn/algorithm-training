@@ -20,7 +20,6 @@ public class QueueClass {
 		q.poll();	//hello 삭제
 		System.out.println(q.toString()); //world, !
 		
-		System.out.println(q.element());
 		while(q.isEmpty()==false){
 			System.out.println(q.poll());
 			//world, i 순서로 삭제
