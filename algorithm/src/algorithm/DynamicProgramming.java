@@ -28,7 +28,7 @@ public class DynamicProgramming {
 	
 	public static void main(String[] args) {
 //		System.out.println("10번째 항 = "+ DynamicProgramming.fibonacci(10));
-		System.out.println("10번째 항 = "+ DynamicProgramming.dynamicFibonacci(30));
+		System.out.println("10번째 항 = "+ DynamicProgramming.dynamicFibonacci(10));
 	}
 	
 	// 일반적인 피보나치수열 x번째 항 구하기
