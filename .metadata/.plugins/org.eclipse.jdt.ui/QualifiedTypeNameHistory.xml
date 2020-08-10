@@ -15,4 +15,5 @@
 <fullyQualifiedTypeName name="programmers.level2.FunctionImplement"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.PriorityQueue"/>
 </qualifiedTypeNameHistroy>
