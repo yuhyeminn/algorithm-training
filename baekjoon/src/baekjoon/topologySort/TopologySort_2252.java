@@ -1,13 +1,16 @@
-package baekjoon;
+package baekjoon.topologySort;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class TopologySort_2252 {
 	public static LinkedList<Integer>[] edge;
 	public static int[] indegree;
 	public static void main(String[] args) throws IOException {
@@ -16,6 +19,7 @@ public class Main {
 		StringTokenizer s = new StringTokenizer(br.readLine()," ");
         
 		//n명의 학생, m번의 키 비교
+		//정점 n, 간선 m
 		int n = Integer.parseInt(s.nextToken());
         int m = Integer.parseInt(s.nextToken());
 
@@ -35,7 +39,6 @@ public class Main {
 		}
 		
 		Queue<Integer> q = new LinkedList<>();
-
 		for(int i=1;i<n+1;i++) {
 			if(indegree[i] == 0) {
 				q.add(i);
@@ -53,7 +56,6 @@ public class Main {
 				}
 			}
 		}
-        
         br.close();
 	}
 }
