@@ -11,6 +11,9 @@ import java.util.Collections;
  *   가장 적은 비용부터 차례대로 정점을 연결해나감
  * - 최소 간선 개수 = 노드 개수 - 1
  * - 최소 비용 신장 트리에서는 사이클이 발생하면 안됨
+ * 
+ * [참고]
+ * https://fbtmdwhd33.tistory.com/11
  */
 public class KruskalAlgorithm {
 	// 부모 노드 찾는 재귀 메소드

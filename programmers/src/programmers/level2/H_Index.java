@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class H_Index {
 
 	public static void main(String[] args) {
-		int[] citations = {31,66};
+		int[] citations = {0,0,0};
 		System.out.println("result="+solution(citations));
 	}
 	
@@ -26,9 +26,8 @@ public class H_Index {
 		
 		Arrays.sort(citations);
 		
-		int index = citations.length-1;
 		int n = citations.length;
-		while(index > 0) {
+		while(n > 0) {
 			int a = 0;	//num 이상인 개수
 			int b = 0;	//num 이하인 개수
 			for(int i=0;i<citations.length;i++) {
