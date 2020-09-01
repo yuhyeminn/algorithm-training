@@ -9,6 +9,8 @@ import java.util.Queue;
  * - 특정한 지점에서 다른 지점으로 데이터가 얼마나 많이 흐르고 있는가를 측정하는 알고리즘
  * - 최대 유량(Max Flow)문제를 해결하는 데 사용
  * - 너비 우선 탐색(BFS)를 이용 - 에드몬드 카프(Edmonds-Karp) 알고리즘
+ * - 시간복잡도 O(V*E^2)
+ * 
  * [참고]
  * https://engkimbs.tistory.com/353
  */

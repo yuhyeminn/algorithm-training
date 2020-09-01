@@ -23,7 +23,7 @@ public class DFS {
 		adj = new LinkedList[v];
 		//인접리스트 초기화
 		for(int i=0; i<v; i++) {
-			adj[i] = new LinkedList();
+			adj[i] = new LinkedList<>();
 		}
 	}
 	
