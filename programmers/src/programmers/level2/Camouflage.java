@@ -1,8 +1,8 @@
 package programmers.level2;
 
 import java.util.HashMap;
-import java.util.Map;
 
+import java.util.Map;
 /**
  * 위장
  * 
