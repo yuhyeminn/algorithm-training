@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.string_matching;
 
 import java.util.ArrayList;
 import java.util.Arrays;
