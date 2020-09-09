@@ -1,4 +1,4 @@
-package baekjoon.bipartiteMatching;
+package baekjoon.bipartite_matching;
 
 import java.io.BufferedReader;
 import java.io.IOException;

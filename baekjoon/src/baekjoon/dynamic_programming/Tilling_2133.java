@@ -1,4 +1,4 @@
-package baekjoon.dynamicProgramming;
+package baekjoon.dynamic_programming;
 
 /**
  * 2133 타일 채우기

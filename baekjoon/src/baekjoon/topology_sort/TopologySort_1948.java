@@ -1,4 +1,4 @@
-package baekjoon.topologySort;
+package baekjoon.topology_sort;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

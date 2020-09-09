@@ -1,4 +1,4 @@
-package baekjoon.dynamicProgramming;
+package baekjoon.dynamic_programming;
 
 /**
  * 117276 2xn 타일링
