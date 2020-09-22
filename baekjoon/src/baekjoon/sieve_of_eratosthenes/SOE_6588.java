@@ -37,26 +37,20 @@ public class SOE_6588 {
 			}
 		}
 		
-		int input = Integer.parseInt(br.readLine());
-		while(input!=0) {
-			sb.append(getPartition(input) + "\n");
-			input = Integer.parseInt(br.readLine());
+		while(true) {
+			int N = Integer.parseInt(br.readLine());
+			if(N==0) break;
+			boolean flag = false;
+			for(int i=3;i<=N/2;i+=2) {
+				if(!arr[i] && !arr[N-i] ) {
+					sb.append(N).append(" = ").append(i).append(" + ").append(N-i).append("\n");
+					flag = true;
+					break;
+				}
+			}
+			if(!flag) sb.append("Goldbach's conjecture is wrong.\n");
 		}
 		
 		System.out.println(sb);
-	}
-	
-	public static String getPartition(int n) {
-		String result = "Goldbach's conjecture is wrong.";
-		
-		int i = 3;
-		while(i <= n/2) {
-			if(!arr[i] && !arr[n-i] ) {
-				return n + " = " + i + " + " + (n-i);
-			}
-			i+=2;
-		}
-		
-		return result;
 	}
 }
