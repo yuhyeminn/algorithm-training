@@ -16,6 +16,9 @@ import java.io.InputStreamReader;
  * 
  * [출력]
  * 첫째 줄에 문제의 정답을 출력한다.
+ * 
+ * [참고]
+ * https://bcp0109.tistory.com/47
  */
 public class DAC_1074 {
 	
@@ -27,7 +30,43 @@ public class DAC_1074 {
 		int r = Integer.parseInt(input[1]);
 		int c = Integer.parseInt(input[2]);
 		
+		//n = 2^N 
+		int n = (int) Math.pow(2, N);
+		int x = 0;
+		int y = 0;
 		
+		int count = 0;
+		while(n > 0) {
+			n /= 2;
+			
+			//2차원 배열이라는 것을 명심하자,, 일반적인 좌표로 생각했다가 헷갈렸음 
+			//2사분면(왼쪽 위)
+			if(r < x+n && c < y+n) {
+				
+			}
+			//1사분면(오른쪽 위)
+			else if(r < x+n) {
+				count += n * n;	//2사분면의 총 개수만큼 더해줌
+				y += n;
+			}
+			//3사분면(왼쪽 아래)
+			else if(c < y+n) {
+				count += n * n * 2;	//1,2사분면의 총 개수만큼 더해줌
+				x += n;
+			}
+			//4사분면(오른쪽 아래)
+			else {
+				count += n * n * 3;	//1,2,3사분면의 총 개수만큼 더해줌
+				x += n;
+				y += n;
+			}
+			
+			//n이 1일 경우는 (x,y)가 (r,c)와 같아졌다는 것
+			if(n == 1) {
+				System.out.println(count);
+				break;
+			}
+		}
 	}
 	
 }
