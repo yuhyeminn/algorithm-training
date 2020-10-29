@@ -11,6 +11,7 @@ public class NHN02 {
 	}
 	
 	private static void solution(int day, int width, int[][] blocks) {
+		int total[] = new int[width];	//각 너비의 총 높이
 		
 	}
 	
