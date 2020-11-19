@@ -1,4 +1,4 @@
-package programmers.challenge_0910;
+package programmers.code_challenge.challenge_0910;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package programmers.challenge_1008;
+package programmers.code_challenge.challenge_1008;
 
 public class challenge1 {
 

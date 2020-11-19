@@ -1,4 +1,4 @@
-package programmers.challenge_1105;
+package programmers.code_challenge.challenge_1105;
 
 import java.util.HashMap;
 import java.util.HashSet;
