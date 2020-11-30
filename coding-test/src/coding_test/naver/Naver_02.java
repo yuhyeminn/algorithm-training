@@ -1,4 +1,4 @@
-package programmers.naver;
+package coding_test.naver;
 
 import java.util.Arrays;
 

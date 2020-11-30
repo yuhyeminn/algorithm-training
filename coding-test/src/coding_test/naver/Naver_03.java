@@ -1,4 +1,4 @@
-package programmers.naver;
+package coding_test.naver;
 
 public class Naver_03 {
 

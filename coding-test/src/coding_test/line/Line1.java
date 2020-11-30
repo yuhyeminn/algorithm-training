@@ -1,4 +1,4 @@
-package programmers.line;
+package coding_test.line;
 
 import java.util.ArrayList;
 import java.util.List;

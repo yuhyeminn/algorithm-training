@@ -1,4 +1,4 @@
-package programmers.nhn;
+package coding_test.nhn;
 
 public class NHN03 {
 

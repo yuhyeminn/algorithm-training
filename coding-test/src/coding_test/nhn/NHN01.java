@@ -1,4 +1,4 @@
-package programmers.nhn;
+package coding_test.nhn;
 
 import java.util.ArrayList;
 import java.util.Arrays;
