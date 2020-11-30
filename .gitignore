@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /.metadata/
 /.recommenders/
 =======
@@ -97,4 +97,6 @@ local.properties
 hs_err_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java
->>>>>>> 5675fc6ac4c0893f59551ba935d8d33a9d880aa3
+
+### custom
+./coding-test/
