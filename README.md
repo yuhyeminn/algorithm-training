@@ -63,6 +63,8 @@
 
 ​	:heavy_check_mark: 세그먼트 트리 (Segment Tree, 구간 트리)
 
+</br>
+
 ### 📖 문자열 매칭(String Mathcing)
 
 ​	:heavy_check_mark: KMP 알고리즘 (Knuth-Morris-Patt Algorithm)
