@@ -3,11 +3,11 @@
 
 <br>
 
-### 📚 알고리즘 & 자료구조 
+## 📚 알고리즘 & 자료구조 
 
 <br>
 
-#### 📖 정렬 (Sort)
+### 📖 정렬 (Sort)
 
 ​	:heavy_check_mark: 선택 정렬 (Selection Sort)
 
@@ -23,7 +23,9 @@
 
 ​	:heavy_check_mark: 계수 정렬 (Counting Sort)
 
-#### 📖 탐색 (Search)
+</br>
+
+### 📖 탐색 (Search)
 
 ​	:heavy_check_mark: 큐 (Queue)
 
@@ -35,7 +37,9 @@
 
 ​	:heavy_check_mark: 합집합 찾기 (Union-Find)
 
-#### 📖 그래프 (Graph)
+</br>
+
+### 📖 그래프 (Graph)
 
 ​	:heavy_check_mark: 크루스칼 알고리즘 (Kruskal Algorithm)
 
@@ -51,19 +55,23 @@
 
 ​	:heavy_check_mark: 이분 매칭 (Bipartite Matching)
 
-#### 📖 트리 (Tree)
+</br>
+
+### 📖 트리 (Tree)
 
 ​	:heavy_check_mark: 이진 트리(Binary Tree) 및 순회(Traversal)
 
 ​	:heavy_check_mark: 세그먼트 트리 (Segment Tree, 구간 트리)
 
-#### 📖 문자열 매칭(String Mathcing)
+### 📖 문자열 매칭(String Mathcing)
 
 ​	:heavy_check_mark: KMP 알고리즘 (Knuth-Morris-Patt Algorithm)
 
 ​	:heavy_check_mark: 라빈 카프 알고리즘 (Rabin-Karp Algorithm)
 
-#### 📖 기타
+</br>
+
+### 📖 기타
 
 ​	:heavy_check_mark: 다이나믹 프로그래밍(DP, Dynamic Programming)
 
@@ -71,7 +79,7 @@
 
 ​	:heavy_check_mark: 에라토스테네스의 체(Sieve Of Eratosthenes)
 
-
+</br>
 
 
 
