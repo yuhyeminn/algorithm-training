@@ -1,8 +1,8 @@
-package baekjoon;
+package solved_ac.class1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Class1_11720 {
     
 	public static void main(String[] args) throws Exception{
        Scanner sc = new Scanner(System.in);
