@@ -100,5 +100,5 @@ hs_err_pid*
 
 ### custom
 /coding-test/
-/baekjoon/solved_ac/Main.java
-/baekjoon/baekjoon/Main.java
+/baekjoon/src/solved_ac/Main.java
+/baekjoon/src/baekjoon/Main.java
