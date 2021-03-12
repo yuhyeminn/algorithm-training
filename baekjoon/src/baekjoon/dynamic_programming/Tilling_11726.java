@@ -1,5 +1,8 @@
 package baekjoon.dynamic_programming;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * 11726 2xn 타일링
  * 2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오.
@@ -19,11 +22,13 @@ public class Tilling_11726 {
 		if( x == 1 ) return 1;
 		if( x == 2 ) return 2;
 		if(memo[x] != 0) return memo[x];
-		return memo[x] = (tilling(x-1) + tilling(x-2)) % 1007;
+		return memo[x] = (tilling(x-1) + tilling(x-2)) % 10007;
 	}
 	
-	public static void main(String[] args) {
-		int x = 9;
-		System.out.println("2 * "+x+" 크기의 직사각형을 채우는 방법의 수 = " + tilling(x));
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine());
+		
+		System.out.println(tilling(N));
 	}
 }
