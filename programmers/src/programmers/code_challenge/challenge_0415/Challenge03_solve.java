@@ -1,14 +1,14 @@
 package programmers.code_challenge.challenge_0415;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
 
 /**
  * 모두 0으로 만들기
  * @author hyemin
  *
  * ** 위상 정렬을 이용해 풀어볼 것
+ * ** LinkedList -> 시간초과
+ * ** dfs -> 시간 효율이 떨어짐
  * [참고]
  * https://dev-note-97.tistory.com/263?category=884288
  */
@@ -17,18 +17,18 @@ public class Challenge03_solve {
 	static int N;
 	static boolean[] visited;
 	static long[] arr;
-	static LinkedList<Integer>[] adj;
+	static ArrayList<Integer>[] adj;
 	static long answer;
 	public static long solution(int[] a, int[][] edges) {
 	    
 	    N = a.length;
-	    adj = new LinkedList[N];
+	    adj = new ArrayList[N];
 	    visited = new boolean[N];
 	    arr = new long[N];
 	    
 	    long sum = 0;
 	    for(int i=0;i<N;i++) {
-	    	adj[i] = new LinkedList<>();
+	    	adj[i] = new ArrayList<>();
 	    	arr[i] = a[i];
 	    	sum += a[i];
 	    }
@@ -38,10 +38,8 @@ public class Challenge03_solve {
 	    }
 	    
 	    for(int i=0;i<edges.length;i++) {
-	    	int x = edges[i][0];
-	    	int y = edges[i][1];
-	    	adj[x].add(y);
-	    	adj[y].add(x);
+	    	adj[edges[i][0]].add(edges[i][1]);
+	    	adj[edges[i][1]].add(edges[i][0]);
 	    }
 	    
 	    dfs(0);
@@ -55,11 +53,11 @@ public class Challenge03_solve {
 		for(int i=0;i<adj[v].size();i++) {
 			int x = adj[v].get(i);
 			if(!visited[x]) {
-				arr[v] = dfs(x);
+				arr[v] += dfs(x);	
 			}
 		}
 		
-		answer += Math.abs(arr[v]);
+		answer += Math.abs(arr[v]); //현재 가중치 더하기
 		
 		return arr[v];
 	}
