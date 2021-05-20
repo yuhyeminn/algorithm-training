@@ -1,6 +1,5 @@
 package programmers.kakao;
 
-import java.util.Arrays;
 
 public class KaKao2 {
 
