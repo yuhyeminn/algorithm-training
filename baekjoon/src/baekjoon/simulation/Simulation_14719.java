@@ -1,23 +1,20 @@
 package baekjoon.simulation;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Stack;
 import java.util.StringTokenizer;
 
 /**
- * 빗물
+ ** 빗물
  * 
  * @author hyemin
  * 
  * [https://covenant.tistory.com/224] - part2.시뮬레이션의 응용
  * 
  */
-public class Simulation_14719 {
+public class Simulation_14719{
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
-
+	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str[] = br.readLine().split(" ");
 		
@@ -56,7 +53,6 @@ public class Simulation_14719 {
 		}
 
 		System.out.println(result);
+		
 	}
-
-	
 }

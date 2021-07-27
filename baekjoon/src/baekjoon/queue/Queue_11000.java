@@ -1,7 +1,6 @@
 package baekjoon.queue;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.PriorityQueue;
@@ -12,11 +11,14 @@ import java.util.StringTokenizer;
  * 
  * @author hyemin
  * 
+ * [해결]
+ * 강의 시작 시간 기준으로 오름차순 정렬 - 같을 경우 종료시간으로 오름차순 정렬
+ * 	-> 우선순위큐에 시작시간순서대로 넣어 비교하기 위해
  * 
  */
-public class Queue_11000 {
+public class Queue_11000{
 
-	public static void main(String[] args) throws NumberFormatException, IOException {
+	public static void main(String[] args) throws Exception{
 		StringTokenizer st;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
@@ -47,6 +49,7 @@ public class Queue_11000 {
 		}
 		
 		System.out.println(pq.size());
+		System.out.println(pq.toString());
 		
 	}
 	

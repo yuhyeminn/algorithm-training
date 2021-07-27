@@ -16,7 +16,7 @@ import java.util.Stack;
  * 다시 볼 것.. 닫는 괄호 코드 부분 정리하기..
  * 
  */
-public class Stack_2504 {
+public class Stack_2504{
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
@@ -70,5 +70,4 @@ public class Stack_2504 {
 
 		return result;
 	}
-
 }
