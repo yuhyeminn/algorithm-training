@@ -26,7 +26,7 @@ import java.util.Queue;
  * 첫 번째 줄에는 총 단지수를 출력하시오. 그리고 각 단지내 집의 수를 오름차순으로 정렬하여 한 줄에 하나씩 출력하시오.
  * 
  */
-public class BFS_DFS_2667 {
+public class BFS_2667 {
 
 	static int[] dx = {1, -1, 0, 0};	//x좌표 방향배열
 	static int[] dy = {0, 0, 1, -1};	//y좌표 방향배열
