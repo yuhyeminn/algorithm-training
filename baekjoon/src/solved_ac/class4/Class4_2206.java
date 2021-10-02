@@ -19,6 +19,7 @@ public class Class4_2206 {
     static int[] dx = {0, 0, -1, 1};
     static int[] dy = {-1, 1, 0, 0};
     static int[][] visited;
+    static int result;
     
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,12 +39,16 @@ public class Class4_2206 {
 			}
 		}
 		
-		int result = bfs(0, 0);
+		result = Integer.MAX_VALUE;
+		
+		bfs(0, 0);
+		if(result == Integer.MAX_VALUE) result = -1;
+		
 		System.out.println(result);
 		
 	}
 	
-	static int bfs(int x, int y) {
+	static void bfs(int x, int y) {
 		
 		Queue<Point> q = new LinkedList<>();
 		q.add(new Point(x, y, 1, 0));
@@ -53,7 +58,8 @@ public class Class4_2206 {
 			Point p = q.poll();
 			
 			if(p.x == M-1 && p.y == N-1) {
-				return p.dis;
+				result = p.dis;
+				break;
 			}
 			
 			for(int i=0;i<4;i++) {
@@ -76,8 +82,6 @@ public class Class4_2206 {
 				}
 			}
 		}
-		
-		return 0;
 	}
 	
 	static class Point {
